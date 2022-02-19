@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<courses>
+	<course name = "test" description = "course_description" icon = "course_icon.jpg" >
+		<themes>
+			<theme name = "test_theme" type = "type" >
+				<chapters>
+					<chapter name = "Name_chapter">
+						<content photo = "sd1.png"> Description1 </content>
+						<content photo = "sd12.png"> Description2 </content>
+					</chapter>
+				</chapters>
+			</theme>
+			<theme name = "test_theme2" type = "type">
+				<chapters>
+					<chapter name = "Name_chapter">
+						<content photo = "sd2.png"> Description11 </content>
+						<content photo = "sd23.png"> Description22 </content>
+					</chapter>
+				</chapters>
+			</theme>
+		</themes>
+	</course>
+	<course name = "test2" description = "course_description2" icon = "course_icon.jpg">
+		<themes>
+			<theme name = "test_theme2" type = "type">
+				<chapters>
+					<chapter name = "Name_chapter">
+						<content photo = "sd3.png"> Description3 </content>
+						<content photo = "sd4.png"> Description4 </content>
+					</chapter>
+				</chapters>
+			</theme>
+		</themes>
+	</course>
+</courses>

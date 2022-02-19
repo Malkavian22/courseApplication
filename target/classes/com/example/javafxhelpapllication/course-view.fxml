@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.7070707070707071" mouseTransparent="true" orientation="VERTICAL" prefHeight="119.0" prefWidth="1209.0">
+        <items>
+          <AnchorPane minHeight="80" minWidth="0.0" prefHeight="80.0" prefWidth="1166.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@couse_icon.jpg" />
+                     </image></ImageView>
+                  <VBox minHeight="80" prefHeight="80.0" prefWidth="598.0">
+                     <children>
+                        <AnchorPane minHeight="40" prefHeight="90.0" prefWidth="1200.0">
+                           <children>
+                              <Label prefHeight="15.0" prefWidth="78.0" text="Прогресс X" textFill="#ff1f1f" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="480.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Label prefHeight="31.0" prefWidth="177.0" text="ОТКРЫТЫЙ КУРС" textFill="#ff0909" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="381.0" AnchorPane.topAnchor="20.0">
+                                 <font>
+                                    <Font name="Calibri" size="20.0" />
+                                 </font></Label>
+                              <ProgressBar maxHeight="10.0" minHeight="10.0" prefHeight="10.0" prefWidth="900.0" progress="0.7" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="55.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="40" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox prefHeight="31.0" prefWidth="712.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Содержание">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="О курсе" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="2.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <VBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="1105.0" spacing="30.0">
+         <children>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <ScrollPane fx:id="course" hbarPolicy="NEVER" minHeight="500" prefHeight="1600.0" prefWidth="585.0" maxHeight="Infinity">
+         <VBox.margin>
+            <Insets bottom="5.0" right="5.0" />
+         </VBox.margin></ScrollPane>
+   </children>
+</VBox>

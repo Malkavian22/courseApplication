@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="521.0" prefWidth="527.0"
+            xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.javafxhelpapllication.HelloController">
+   <children>
+      <VBox layoutX="139.0" layoutY="106.0" prefHeight="363.0" prefWidth="254.0">
+         <children>
+            <ImageView fitHeight="244.0" fitWidth="256.0" pickOnBounds="true">
+               <image>
+                  <Image url="@orig.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="aboutCompany" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" lineSpacing="1.0" prefHeight="123.0" prefWidth="254.0" text=" Какой-то текст про приложение, ебать эти располоежния элементов в сраку" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button alignment="BOTTOM_RIGHT" layoutX="427.0"
+              layoutY="496.0" mnemonicParsing="false"
+              text="Нажми меня" onAction="#createNewWindow"
+              fx:id="buttonNewWindow"/>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

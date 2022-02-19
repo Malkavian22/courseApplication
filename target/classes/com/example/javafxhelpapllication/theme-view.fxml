@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="986.0" prefWidth="1328.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxhelpapllication.ThemeViewController">
+   <children>
+      <SplitPane fx:id="split_pane1" dividerPositions="0.10881174899866489" maxWidth="2000.0" minWidth="1400.0" prefHeight="990" prefWidth="1500.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="828.0" prefWidth="165.0" spacing="80.0">
+                     <children>
+                        <VBox prefHeight="160.0" prefWidth="165.0" spacing="35.0">
+                           <children>
+                              <Label fx:id="name_theme" prefHeight="91.0" prefWidth="124.0" text="" textAlignment="CENTER" underline="true" wrapText="true">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="5.0" top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="75.0" prefWidth="158.0">
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="10.0" right="5.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label fx:id="label_percent" prefHeight="17.0" prefWidth="47.0" text="0.00%">
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin></Label>
+                                    <ProgressBar fx:id="progress_theme" maxHeight="18.0" maxWidth="110.0" minHeight="11.0" minWidth="100.0" prefHeight="11.0" prefWidth="102.0" progress="0.0">
+                                       <HBox.margin>
+                                          <Insets right="4.0" top="10.0" />
+                                       </HBox.margin></ProgressBar>
+                                 </children>
+                                 <padding>
+                                    <Insets right="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vbox_chapters" prefHeight="350.0" prefWidth="100.0" spacing="15.0" style="-fx-background-color: #C0C0C0;">
+                           <VBox.margin>
+                              <Insets left="5.0" right="3.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="anchor_pane1" minHeight="0.0" minWidth="0.0" prefHeight="546.0" prefWidth="686.0">
+               <children>
+                  <SplitPane fx:id="split_pane2" dividerPositions="0.05" orientation="VERTICAL" prefHeight="984.0" prefWidth="1250.0" style="-fx-background-color: transparent;">
+                     <stylesheets>
+                        <URL value="@divider.css" />
+                     </stylesheets>
+                    <items>
+                      <AnchorPane fx:id="anchor_split_pane2TOP" minHeight="0.0" minWidth="0.0" prefHeight="46.0" prefWidth="1250.0">
+                           <children>
+                              <VBox fx:id="top_vbox" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="1250.0" spacing="5.0">
+                                 <children>
+                                    <Button fx:id="hide" mnemonicParsing="false" onAction="#onHideClick" prefHeight="17.0" prefWidth="27.0" text="&lt;&lt;">
+                                        <stylesheets>
+                                            <URL value="@roundedbutton.css" />
+                                        </stylesheets>
+                                       <padding>
+                                          <Insets left="3.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                    <ProgressBar fx:id="progress_page" prefHeight="13.0" prefWidth="1250.0" progress="0.0">
+                                       <padding>
+                                          <Insets right="2.0" />
+                                       </padding></ProgressBar>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="main_Anchor_Pane" minHeight="0.0" minWidth="0.0" prefHeight="781.0" prefWidth="1250.0">
+                           <children>
+                              <ScrollPane fx:id="main_information" hbarPolicy="NEVER" maxHeight="1000" minHeight="500" onScroll="#onScroll" prefHeight="940.0" prefWidth="1250.0" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
