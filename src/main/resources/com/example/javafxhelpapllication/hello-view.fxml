@@ -19,7 +19,7 @@
                   <Image url="@orig.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="aboutCompany" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" lineSpacing="1.0" prefHeight="123.0" prefWidth="254.0" text=" Какой-то текст про приложение, ебать эти располоежния элементов в сраку" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true">
+            <Label fx:id="aboutCompany" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" lineSpacing="1.0" prefHeight="123.0" prefWidth="254.0" text=" Какой-то текст" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
